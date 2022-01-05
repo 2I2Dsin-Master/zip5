@@ -1,15 +1,3 @@
-function step () {
-    strip.show()
-    basic.pause(500)
-}
-function test1 () {
-    strip.showColor(neopixel.colors(NeoPixelColors.Red))
-    step()
-    strip.showColor(neopixel.colors(NeoPixelColors.Orange))
-    step()
-    strip.showColor(neopixel.colors(NeoPixelColors.Green))
-    step()
-}
 // CYCLE: 
 // Rouge Bleu
 // Orange Rouge
@@ -36,6 +24,7 @@ function step2 () {
     basic.pause(1000)
     strip.shift(1)
 }
+// basé sur WS2812
 let strip: neopixel.Strip = null
 strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
 strip.setBrightness(31)
